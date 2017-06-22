@@ -1,0 +1,11 @@
+version: '2'
+services:
+  redis_master:
+      image: redis:base
+      container_name: redis_master
+      hostname: redis_master
+      privileged: true
+      environment:
+        ROLE: master
+      ports:
+        - 6379:6379
