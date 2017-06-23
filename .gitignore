@@ -28,3 +28,7 @@ Temporary Items
 .apdisk
 
 /.idea/
+*.aof
+*.rdb
+*.conf
+*.log
