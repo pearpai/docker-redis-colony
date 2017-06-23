@@ -30,5 +30,5 @@ Temporary Items
 /.idea/
 *.aof
 *.rdb
-*.conf
+/data/**/*.conf
 *.log
