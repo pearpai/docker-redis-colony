@@ -6,6 +6,17 @@
 - docker
 - docker-compose
 
+## redis 配置文件修改
+```bash
+bind 0.0.0.0
+daemonize    yes                          //redis后台运行
+cluster-enabled  yes                      //开启集群  把注释#去掉
+cluster-node-timeout  15000               //请求超时  默认15秒，可自行设置
+appendonly  yes                           //aof日志开启  有需要就开启，它会每次写操作都记录一条日志　
+dir /data/
+logfile /var/log/redis/redis.log
+```
+
 ## 建立基础 centos
 **执行命令：** docker-compose build
 此命令为将执行 docker-compose.yml 文件中配置建立基础镜像
