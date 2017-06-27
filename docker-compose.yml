@@ -7,3 +7,7 @@ services:
   redis:
     image: redis:base
     build: ./redis
+
+  hadoop:
+    image: hadoop:base
+    build: ./hadoop

@@ -32,3 +32,9 @@ Temporary Items
 *.rdb
 /data/**/*.conf
 *.log
+/data/source/*
+/data/hadoop*/dfs/data/
+/data/hadoop*/dfs/name/
+/data/hadoop*/tmp/
+/data/hadoop*/var/
+*.rpm
